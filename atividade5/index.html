@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="estilo.css">
+    </head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showLogin()">HOME</a></li>
+                    <li class="submenu">CADASTROS
+                        <ul>
+                            <li><a href="#">CIDADE</a></li>
+                            <li><a href="#">ESTADO</a></li>
+                            <li><a href="#">PAÍS</a></li>
+                            <li><a href="#">USUÁRIO</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="content">
+            <div class="logo">
+                <img src="logo.png" alt="Logo do Sistema">
+            </div>
+            <div id="loginForm" style="display: none;">
+                <h2>Login</h2>
+                <form>
+                    <label for="username">Nome</label>
+                    <input type="text" id="username" placeholder="Digite seu nome">
+                    
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite sua senha">
+                    
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
