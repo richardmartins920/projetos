@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Avaliação Física</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Avaliação Física</h1>
+  <form id="formulario">
+    <label>Nome: <input type="text" id="nome" required /></label>
+    <label>Idade: <input type="number" id="idade" required /></label>
+    <label>Sexo:
+      <select id="sexo" required>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+      </select>
+    </label>
+    <label>Peso (kg): <input type="number" id="peso" step="0.1" required /></label>
+    <label>Altura (cm): <input type="number" id="altura" required /></label>
+    <label>Nível de atividade física:
+      <select id="atividade" required>
+        <option value="1.2">Sedentário</option>
+        <option value="1.375">Levemente ativo</option>
+        <option value="1.55">Moderadamente ativo</option>
+        <option value="1.725">Muito ativo</option>
+        <option value="1.9">Extremamente ativo</option>
+      </select>
+    </label>
+    <label>Distância caminhada (km): <input type="number" id="distancia" step="0.1" /></label>
+    <label>Meta de perda (kg): <input type="number" id="metaKg" step="0.1" /></label>
+    <label>Dias para meta: <input type="number" id="diasMeta" /></label>
+    <button type="button" onclick="calcular()">Calcular</button>
+  </form>
+
+  <div class="resultados" id="resultados"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
