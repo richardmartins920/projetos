@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Título */
+h1 {
+  color: #00bcd4;
+  margin-bottom: 30px;
+}
+
+/* Campos de entrada */
+input {
+  padding: 10px;
+  margin: 5px;
+  width: 250px;
+  border: none;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+}
+
+/* Botões principais */
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+/* Cores específicas */
+#incluir {
+  background-color: #4caf50;
+}
+
+#editar {
+  background-color: #ff9800;
+}
+
+#excluir {
+  background-color: #f44336;
+}
+
+#primeiro, #anterior, #proximo, #ultimo {
+  background-color: #000000;
+}
+
+/* Hover effects */
+#incluir:hover {
+  background-color: #45a049;
+}
+
+#editar:hover {
+  background-color: #fb8c00;
+}
+
+#excluir:hover {
+  background-color: #d32f2f;
+}
+
+#primeiro:hover,
+#anterior:hover,
+#proximo:hover,
+#ultimo:hover {
+  background-color: #333;
+}
+
+/* ===== LOGIN ===== */
+#login-form {
+  background-color: #e0e0e0;
+  width: 300px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+#entrar {
+  width: 100%;
+  padding: 10px;
+  background-color: #00f700;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#entrar:hover {
+  background-color: #0097a7;
+}
+
+/* Responsividade simples */
+@media (max-width: 600px) {
+  input {
+    width: 90%;
+  }
+
+  button {
+    width: 90%;
+  }
+
+  #login-form {
+    width: 90%;
+  }
+}
+
